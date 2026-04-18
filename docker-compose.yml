@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  taskmanager:
+    build: .
+    container_name: taskmanager-app
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:h2:mem:taskdb
+      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.h2.Driver
+      - SPRING_DATASOURCE_USERNAME=sa
+      - SPRING_DATASOURCE_PASSWORD=
+      - SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.H2Dialect
+      - JWT_SECRET=kaushikSuperSecretKeyThatIsAtLeast256BitsLong!!
+      - JWT_EXPIRATION=86400000
+    restart: unless-stopped

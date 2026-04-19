@@ -8,7 +8,7 @@ A production-ready RESTful API built with **Spring Boot**, secured with **JWT Au
 
 | Technology | Purpose |
 |------------|---------|
-| Java 21 | Core language |
+| Java 17 | Core language |
 | Spring Boot 3.x | Application framework |
 | Spring Security | Authentication & Authorization |
 | JWT (jjwt) | Token-based auth |

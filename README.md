@@ -1,4 +1,5 @@
 # 📋 Task Manager API
+![CI](https://github.com/kaushikuk10-cpu/taskmanager/actions/workflows/ci.yml/badge.svg)
 
 A production-ready RESTful API built with **Spring Boot**, secured with **JWT Authentication**, documented with **Swagger/OpenAPI**, containerized with **Docker**, and deployed on **AWS Elastic Beanstalk**.
 
